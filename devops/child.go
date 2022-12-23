@@ -10,7 +10,6 @@ import (
 // cmd.Start -> starts the process asynchronously and lets the parent process (this program for example) continue its flow
 // cmd.Wait waits on process started by cmd.Start
 // cmd.Output runs the command standalone and returns its result
-// cmd.CombinedOutput -> excutes the command and returns the combined output of both stderr and stdout
 
 func main() {
 	cmd := exec.Command("ls", "-l")
